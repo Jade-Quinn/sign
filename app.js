@@ -51,6 +51,16 @@ document.addEventListener ('DomContentLoaded', () => {
             img: 'images/yellow.jpg'
         }  
     ]
+const grid = document.querySelector.('.grid')
 
-    
+//create the board
+function createBoard() {
+    for (let i = 0; i < cardArray.length; i++) {
+        var card = document.createElement('img')
+        card.setAttribute('src', 'images/blank.jpg')
+        card.setAttribute('data-id', i)
+        grid.appendChild(card)
+    }
+}
+
 })
