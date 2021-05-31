@@ -1,4 +1,4 @@
-//check html has loaded if true run ready function
+// Check html has loaded if true run ready function
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ready());
 } else  {
@@ -6,5 +6,14 @@ if (document.readyState === 'loading') {
 }
 
 function ready() {
-    
+    // Use Array.from to create an array of overlays elements and cards
+    let overlays = Array.from(document.getElementsByClassName('overlay-text'));
+    let cards = Array.from(document.getElementsByClassName('card'));
+
+    // For all overlays add a click event listener to remove visibility
+    overlays.forEach(overlay => {
+        overlay.addEventListner('click', () => {
+            overlay.classList.remove('visible');
+        });
+    });
 }
