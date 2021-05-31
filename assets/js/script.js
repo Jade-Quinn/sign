@@ -47,12 +47,18 @@ class signGame {
         this.ticker = document.getElementById('flips'); // Get value from the DOM
         this.audioController = new AudioController();
     }
+
     startGame() {
         this.cardToCheck = null; // no card face up on game start
         this.totalClicks = 0; // set starting point clicks
         this.timeRemaining = this.totalTime; // set starting point time
         this.matchedCards = []; // Create empty array for matched cards to check against total cards arrary
         this.busy = true;
+    }
+    
+    canFlipCard(card) { // can flip card if not busy & not in matched cards array & not the card already flipped
+        return true; // temporary for testing
+        // return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
 }
 
