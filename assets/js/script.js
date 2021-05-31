@@ -48,7 +48,7 @@ class signGame {
         this.audioController = new AudioController();
     }
     startGame() {
-        this.cardToCheck = null;
+        this.cardToCheck = null; // no card face up on game start
         this.totalClicks = 0; // set starting point clicks
         this.timeRemaining = this.totalTime; // set starting point time
         this.matchedCards = []; // Create empty array for matched cards to check against total cards arrary
