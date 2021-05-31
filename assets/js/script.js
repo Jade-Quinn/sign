@@ -56,9 +56,11 @@ class signGame {
         this.busy = true;
     }
     
-    flipCard() {
+    flipCard(card) {
         if(this.canFlipCard(card)) {
             this.audioController.flip();
+            this.totalClicks++; // increment clicks
+            this.ticker.innertext = this.totalClicks; //update html to show clicks number
         }
     }
 
@@ -75,7 +77,7 @@ function ready() {
     // Use Array.from to create an array of items
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new signGame(60, cards);
+    let game = new signGame(100, cards);
 
     // Loop over all overlays and add a click event listener to remove visibility
     overlays.forEach(overlay => {
