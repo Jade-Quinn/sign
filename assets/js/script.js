@@ -66,7 +66,9 @@ class signGame {
     }
 
     shuffleCards() {
-        
+        for(let i = this.cardsArray.length - 1; i > 0; i--) { // fisher yates shuffle algorithm
+            let randIndex = Math.floor(Math.random() * (i+1));
+        }
     }
 
     canFlipCard(card) { // can flip card if not busy & not in matched cards array & not the card already flipped
