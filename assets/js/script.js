@@ -68,6 +68,8 @@ class signGame {
     shuffleCards() {
         for(let i = this.cardsArray.length - 1; i > 0; i--) { // fisher yates shuffle algorithm
             let randIndex = Math.floor(Math.random() * (i+1));
+            this.cardsArray[randIndex].style.order = i;
+            this.cardsArray[i].style.order = randIndex; // swapping css grid order
         }
     }
 
