@@ -73,6 +73,7 @@ function ready() {
     // Use Array.from to create an array of items
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
+    let game = new signGame(60, cards);
 
     // Loop over all overlays and add a click event listener to remove visibility
     overlays.forEach(overlay => {
