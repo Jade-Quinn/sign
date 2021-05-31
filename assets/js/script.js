@@ -57,7 +57,9 @@ class signGame {
     }
     
     flipCard() {
-
+        if(this.canFlipCard(card)) {
+            this.audioController.flip();
+        }
     }
 
     canFlipCard(card) { // can flip card if not busy & not in matched cards array & not the card already flipped
@@ -80,15 +82,13 @@ function ready() {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
             game.startGame();
-            // let audioController = new AudioController();
-            // audioController.startMusic();
         });
     });
 
     // Loop over all cards and add a click event listner to run flip card function
     cards.forEach(card => {
         card.addEventListener('click', () => {
-            // game.flipCard(card);
+            game.flipCard(card); // when card is clicked call flipCard function
         });
     });
 }
