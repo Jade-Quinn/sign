@@ -39,8 +39,13 @@ class AudioController {
 
 // Class to manage card interactivity
 class signGame {
-    constructor(totaltime, cards) {
-
+    constructor(totalTime, cards) {
+        this.cardsArray = cards;  // property set from constructor
+        this.totalTime = totalTime; // property set from constructor
+        this.timeRemaining = totalTime;
+        this.timer = document.getElementById('time-remaining'); // Gets value from the DOM
+        this.ticker = document.getElementById('flips'); // Gets value from the DOM
+        this.audioController = new AudioController();
     }
 }
 
