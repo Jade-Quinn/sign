@@ -1,4 +1,4 @@
-// Create a javascript class called AudioController
+// Create a javascript class for audio
 class AudioController {
     // class requires constructor method
     constructor() {
@@ -37,9 +37,18 @@ class AudioController {
     }
 }
 
-// create reday function
+// Class to manage card interactivity
+class signGame {
+    constructor(totaltime, cards) {
+
+    }
+}
+
+
+
+// ready function executes when DOM content is loaded
 function ready() {
-    // Use Array.from to create an array of overlays elements and cards
+    // Use Array.from to create an array of items
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
 
@@ -60,7 +69,7 @@ function ready() {
     });
 }
 
-// Check html has loaded if true run ready function
+// Check DOM content has loaded
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ready());
 } else  {
