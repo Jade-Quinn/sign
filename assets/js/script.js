@@ -56,6 +56,10 @@ class signGame {
         this.busy = true;
     }
     
+    flipCard() {
+
+    }
+
     canFlipCard(card) { // can flip card if not busy & not in matched cards array & not the card already flipped
         return true; // temporary for testing
         // return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
