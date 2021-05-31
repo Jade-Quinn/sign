@@ -47,6 +47,9 @@ class signGame {
         this.ticker = document.getElementById('flips'); // Gets value from the DOM
         this.audioController = new AudioController();
     }
+    startGame() {
+
+    }
 }
 
 
