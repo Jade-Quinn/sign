@@ -58,6 +58,7 @@ class signGame {
             this.audioController.startMusic();
             this.shuffleCards();
             this.busy = false;
+            
         }, 500);
     }
     
