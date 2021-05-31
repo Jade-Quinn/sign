@@ -54,6 +54,11 @@ class signGame {
         this.timeRemaining = this.totalTime; // set starting point time
         this.matchedCards = []; // Create empty array for matched cards to check against total cards arrary
         this.busy = true;
+        setTimeout(() => { //.5 second delay
+            this.audioController.startMusic();
+            this.shuffleCards();
+            this.busy = false;
+        }, 500);
     }
     
     flipCard(card) {
@@ -73,7 +78,7 @@ class signGame {
         }
     }
 
-    canFlipCard(card) { // can flip card if not busy & not in matched cards array & not the card already flipped
+    canFlipCard(card) { // flip card if not busy & not in matched cards array & not the card already flipped
         return true; // temporary for testing
         // return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
