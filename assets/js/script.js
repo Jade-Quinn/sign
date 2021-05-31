@@ -43,12 +43,16 @@ class signGame {
         this.cardsArray = cards;  // property set from constructor
         this.totalTime = totalTime; // property set from constructor
         this.timeRemaining = totalTime;
-        this.timer = document.getElementById('time-remaining'); // Gets value from the DOM
-        this.ticker = document.getElementById('flips'); // Gets value from the DOM
+        this.timer = document.getElementById('time-remaining'); // Get value from the DOM
+        this.ticker = document.getElementById('flips'); // Get value from the DOM
         this.audioController = new AudioController();
     }
     startGame() {
-
+        this.cardToCheck = null;
+        this.totalClicks = 0; // set starting point clicks
+        this.timeRemaining = this.totalTime; // set starting point time
+        this.matchedCards = []; // Create empty array for matched cards to check against total cards arrary
+        this.busy = true;
     }
 }
 
