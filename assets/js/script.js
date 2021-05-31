@@ -2,7 +2,7 @@
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ready());
 } else  {
-    ready():
+    ready();
 }
 
 function ready() {
@@ -10,10 +10,17 @@ function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
 
-    // For all overlays add a click event listener to remove visibility
+    // Loop over all overlays and add a click event listener to remove visibility
     overlays.forEach(overlay => {
-        overlay.addEventListner('click', () => {
+        overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
+        });
+    });
+
+    // Loop over all cards and add a click event listner to run flip card function
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            // game.flipCard(card);
         });
     });
 }
