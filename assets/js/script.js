@@ -93,6 +93,7 @@ class signGame {
 
     gameOver() {
         clearInterval(this.countDown); // stop timer
+        this.audioController.gameOver();
     }
 
     shuffleCards() {
