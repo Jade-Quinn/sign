@@ -97,7 +97,9 @@ class signGame {
 
     cardMatch(card1, card2) {
         this.matchedCards.push(card1);
-        this.matchedCards.push(card2); // push both cards to the march cards array
+        this.matchedCards.push(card2); // push both cards to the match cards array
+        card1.classList.add('matched');
+        card2.classList.add('matched'); // add matched class to both cards for animation
     }
 
     cardMisMatch(card1, card2) {
