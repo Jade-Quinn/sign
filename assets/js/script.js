@@ -98,6 +98,9 @@ class signGame {
     }
 
     victory() {
+        clearInterval(this.countDown);
+        this.audioController.victory();
+        document.getElementById('victory-text').classList.add('visible');
     }
 
     shuffleCards() {
