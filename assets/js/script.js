@@ -87,12 +87,20 @@ class signGame {
     }
 
     checkForCardMatch(card) {
-        if(this.getCardType(card) === this.getCardType(this.cardToCheck))
+        if(this.getCardType(card) === this.getCardType(this.cardToCheck)) // compare src attributes of cards
             this.cardMatch(card, this.cardToCheck);
         else 
-            this.cardMisMatch(card, this.cardToCheck);
+            this.cardMisMatch(card, this.cardToCheck); // else call mismatch function
 
         this.cardToCheck = null;
+    }
+
+    cardMatch(card) {
+        
+    }
+
+    cardMisMatch(card) {
+        
     }
 
     getCardType(card) {
