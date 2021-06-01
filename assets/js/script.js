@@ -94,6 +94,7 @@ class signGame {
     gameOver() {
         clearInterval(this.countDown); // stop timer
         this.audioController.gameOver();
+        document.getElementById('game-over-text').classList.add('visible');
     }
 
     shuffleCards() {
