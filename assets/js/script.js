@@ -57,10 +57,11 @@ class signGame {
         setTimeout(() => { //.5 second delay
             this.audioController.startMusic();
             this.shuffleCards();
+            this.countDown = this.startCountDown(); // reset start time on new game
             this.busy = false;
             
         }, 500);
-        this.timer.innerText = this.timeRemaining; // reset times when new game starts
+        this.timer.innerText = this.timeRemaining; // reset timer when new game starts
         this.ticker.innerText = this.totalClicks;
         this.hideCards();
     }
@@ -82,11 +83,16 @@ class signGame {
     }
 
     startCountDown() {
-        
+        return setInterval(() => { // setInterval to call function ever 1 second
+            this.timeRemaining--; // increment down
+            this.timer.innerText = this.timeRemaining; // update inner html
+            if(this.timeRemaining === 0) // if time = 0 game over
+                this.gameOver();
+        }, 1000); //
     }
 
     gameOver() {
-        clearInterval(this.countDown); // stop time
+        clearInterval(this.countDown); // stop timer
     }
 
     shuffleCards() {
