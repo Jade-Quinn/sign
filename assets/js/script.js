@@ -87,7 +87,12 @@ class signGame {
     }
 
     checkForCardMatch(card) {
+        if(this.getCardType(card) === this.getCardType(this.cardToCheck))
+            this.cardMatch(card, this.cardToCheck);
+        else 
+            this.cardMisMatch(card, this.cardToCheck);
 
+        this.cardToCheck = null;
     }
 
     getCardType(card) {
