@@ -62,6 +62,7 @@ class signGame {
         }, 500);
         this.timer.innerText = this.timeRemaining; // reset times when new game starts
         this.ticker.innerText = this.totalClicks;
+        this.hideCards();
     }
 
     hideCards() {
