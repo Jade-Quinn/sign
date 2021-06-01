@@ -80,10 +80,14 @@ class signGame {
             this.ticker.innerText = this.totalClicks; // update html to show clicks number
             card.classList.add('visible');
         }
+        if(this.cardToCheck) // if card is not null
+                this.checkForCardMatch(card);
+            else
+                this.cardToCheck = card;
     }
 
     checkForCardMatch(card) {
-        
+
     }
 
     startCountDown() {
