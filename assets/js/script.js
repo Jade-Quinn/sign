@@ -100,6 +100,7 @@ class signGame {
         this.matchedCards.push(card2); // push both cards to the match cards array
         card1.classList.add('matched');
         card2.classList.add('matched'); // add matched class to both cards for animation
+        this.audioController.match();
     }
 
     cardMisMatch(card1, card2) {
