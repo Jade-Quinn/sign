@@ -101,6 +101,8 @@ class signGame {
         card1.classList.add('matched');
         card2.classList.add('matched'); // add matched class to both cards for animation
         this.audioController.match();
+        if(this.matchedCards.length === this.cardsArray.length) // if array lengths match - victory!
+            this.victory(); 
     }
 
     cardMisMatch(card1, card2) {
