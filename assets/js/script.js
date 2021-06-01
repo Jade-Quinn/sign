@@ -7,19 +7,15 @@ class AudioController {
         this.matchSound = new Audio('assets/audio/match.wav');
         this.victorySound = new Audio('assets/audio/victory.wav');
         this.gameOverSound = new Audio('assets/audio/gameover.wav');
-        // Set background music to play at half volume
-        this.bgMusic.volume = 0.5;
-        // Set background music to repeat
-        this.bgMusic.loop = true;
+        this.bgMusic.volume = 0.5; // Set background music to play at half volume
+        this.bgMusic.loop = true; // Set background music to repeat
     }
     startMusic() {
         this.bgMusic.play();
     }
     stopMusic() {
-        // Pause used because there is no stop function
-        this.bgMusic.pause();
-        // Reset music to start
-        this.bgMusic.currentTime = 0;
+        this.bgMusic.pause(); // Pause used because there is no stop function
+        this.bgMusic.currentTime = 0; // Reset music to start
     }
     flip() {
         this.flipSound.play();

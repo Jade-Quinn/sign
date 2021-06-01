@@ -1,25 +1,45 @@
-@font-face {
-    font-family: "Creepy";
-    src: url("Assets/Fonts/Creepy.woff") format("woff"), url("Assets/Fonts/Creepy.woff2") format("woff2")
-  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+  margin: 0;
+  background-color: #ebb3b2;
+  font-family: 'Roboto', sans-serif;
+}
+
+#intro {
+    font-size: 10rem;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+    color: #ed6e45;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {color: #ed6e45;}
+  25%   { color: #0d33b1;}
+  50%   { color: #f7df57;}
+  75%   { color: #b9e6c6;}
+  100% {color: #ed6e45;}
+}
+
+
+
+
+/* play styling */
   
-  @font-face {
-    font-family: "Lunacy";
-    src: url("Assets/Fonts/Lunacy.woff") format("woff"), url("Assets/Fonts/Lunacy.woff2") format("woff2")
-  }
-  
-  * {
+  /* * {
     box-sizing: border-box;
   }
   
   html {
     min-height: 100vh;
     cursor: url("assets/cursors/Ghost.cur"), auto;
-  }
-  
-  body {
-    margin: 0;
-    background: radial-gradient(#9D5900, #3D2200);
   }
   
   .page-title {
@@ -209,4 +229,4 @@
       flex-direction: column;
       align-items: center;
     }
-  }
+  } */
