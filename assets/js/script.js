@@ -63,6 +63,10 @@ class signGame {
         this.timer.innerText = this.timeRemaining; // reset times when new game starts
         this.ticker.innerText = this.totalClicks;
     }
+
+    hideCards() {
+        
+    }
     
     flipCard(card) {
         if(this.canFlipCard(card)) {
