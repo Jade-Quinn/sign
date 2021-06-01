@@ -82,6 +82,10 @@ class signGame {
         }
     }
 
+    checkForCardMatch(card) {
+        
+    }
+
     startCountDown() {
         return setInterval(() => { // setInterval to call function ever 1 second
             this.timeRemaining--; // increment down
