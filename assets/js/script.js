@@ -60,6 +60,8 @@ class signGame {
             this.busy = false;
             
         }, 500);
+        this.timer.innerText = this.timeRemaining; // reset times when new game starts
+        this.ticker.innerText = this.totalClicks;
     }
     
     flipCard(card) {
