@@ -95,11 +95,12 @@ class signGame {
         this.cardToCheck = null;
     }
 
-    cardMatch(card) {
-        
+    cardMatch(card1, card2) {
+        this.matchedCards.push(card1);
+        this.matchedCards.push(card2); // push both cards to the march cards array
     }
 
-    cardMisMatch(card) {
+    cardMisMatch(card1, card2) {
         
     }
 
