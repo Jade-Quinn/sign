@@ -106,7 +106,12 @@ class signGame {
     }
 
     cardMisMatch(card1, card2) {
-        
+        this.busy = true;  // prevent users from clicking anywhere
+        setTimeout(() => { // delay to allow users to remember cards
+            card1.classList.remove('visible');
+            card2.classList.remove('visible'); // remove visible class of unmatched cards
+            this.busy = false;
+        }, 1000);
     }
 
     getCardType(card) {
