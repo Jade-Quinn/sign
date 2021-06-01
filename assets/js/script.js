@@ -90,6 +90,10 @@ class signGame {
 
     }
 
+    getCardType(card) {
+        return card.getElementsByClassName('card-value')[0].src; // return string of src attribute on front of card
+    }
+
     startCountDown() {
         return setInterval(() => { // setInterval to call function ever 1 second
             this.timeRemaining--; // increment down
