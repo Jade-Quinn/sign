@@ -76,13 +76,17 @@ class signGame {
         if(this.canFlipCard(card)) {
             this.audioController.flip();
             this.totalClicks++; // increment clicks
-            this.ticker.innerText = this.totalClicks; //update html to show clicks number
+            this.ticker.innerText = this.totalClicks; // update html to show clicks number
             card.classList.add('visible');
         }
     }
 
-    gameOver() {
+    startCountDown() {
         
+    }
+
+    gameOver() {
+        clearInterval(this.countDown); // stop time
     }
 
     shuffleCards() {
