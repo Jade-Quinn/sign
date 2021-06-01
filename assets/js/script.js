@@ -92,7 +92,7 @@ class signGame {
         else 
             this.cardMisMatch(card, this.cardToCheck); // else call mismatch function
 
-        this.cardToCheck = null;
+            this.cardToCheck = null; // change cardToCheck back to null
     }
 
     cardMatch(card1, card2) {
@@ -148,8 +148,7 @@ class signGame {
     }
 
     canFlipCard(card) { // flip card if not busy & not in matched cards array & not the card already flipped
-        return true; // temporary for testing
-        // return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
+        return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
 }
 
