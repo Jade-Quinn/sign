@@ -65,7 +65,10 @@ class signGame {
     }
 
     hideCards() {
-        
+        this.cardsArray.forEach(card => {
+            card.classList.remove('visible');
+            card.classList.remove('matched');
+        });
     }
     
     flipCard(card) {
