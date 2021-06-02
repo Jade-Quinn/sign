@@ -2,20 +2,10 @@
 class AudioController {
     // class requires constructor method
     constructor() {
-        this.bgMusic = new Audio('assets/audio/creepy.mp3');
         this.flipSound = new Audio('assets/audio/flip.wav');
         this.matchSound = new Audio('assets/audio/match.wav');
         this.victorySound = new Audio('assets/audio/victory.wav');
         this.gameOverSound = new Audio('assets/audio/gameover.wav');
-        this.bgMusic.volume = 0.5; // Set background music to play at half volume
-        this.bgMusic.loop = true; // Set background music to repeat
-    }
-    startMusic() {
-        this.bgMusic.play();
-    }
-    stopMusic() {
-        this.bgMusic.pause(); // Pause used because there is no stop function
-        this.bgMusic.currentTime = 0; // Reset music to start
     }
     flip() {
         this.flipSound.play();
@@ -24,11 +14,9 @@ class AudioController {
         this.matchSound.play();
     }
     victory() {
-        this.stopMusic();
         this.victorySound.play();
     }
     gameOver() {
-        this.stopMusic();
         this.gameOverSound.play();
     }
 }
@@ -51,7 +39,6 @@ class signGame {
         this.matchedCards = []; // Create empty array for matched cards to check against total cards arrary
         this.busy = true;
         setTimeout(() => { //.5 second delay
-            this.audioController.startMusic();
             this.shuffleCards();
             this.countDown = this.startCountDown(); // reset start time on new game
             this.busy = false;
