@@ -9,23 +9,15 @@
 ## Table of Contents:
 
 - [The Strategy Plane](#the-strategy-plane)
-- [Functionality of Project](#The Strategy Plane)
-- [User Experience](#user-experience)
-  - [User Stories](#user-stories)
-  - [Design](#design)
-    - [1. Font](#1-font)
-    - [2. Color Scheme](#2-color-scheme)
-    - [3. Logo](#3-logo)
-    - [4. Wireframing & Proposed/Implemented Functionality per Page](#4-wireframing--proposedimplemented-functionality-per-page)
-- [Technology Used](#technology-used)
-- [Database](#database)
+- [The Scope Plane](#the-scope-plane))
+- [The Structure Plane](#the-structure-plane)
+- [The Skeleton Plane](#the-skeleton-plane))
+- [The Surface Plane](#the-surface-plane)
 - [Features](#features)
-  - [Future Features](#future-features)
+- [Technology Used](#technology-used)
 - [Testing](#testing)
-  - [Found Bugs & Fixes](#found-bugs--fixes)
 - [Deployment](#deployment)
 - [Credits](#credits)
-  - [Special Thanks & Acknowledgements](#special-thanks--acknowledgements)
 
 ## UX
 
@@ -77,18 +69,18 @@ Each release will allow for a maximum of 12 points. The table below will be used
 Feature | Rating
 ------------ | -------------
 Logo that links to the home page so users can orientate themselves easily | 1
-Clear, consistent hamburger navigation on each page | 1
+Clear, consistent hamburger navigation on each page | 2
 Explain how to play the game | 1
 Responsive design | 1
-Countdown timer | 1
-Flip counter | 1
+Countdown timer | 2
+Flip counter | 2
 Audio queues | 1
 Hide and display text overlays when required | 1
-Card that is being compared stays face up | 1
-Cards which are not a match turn back over | 1
-Matched cards stay face up | 1
+Card that is being compared stays face up | 3
+Cards which are not a match turn back over | 3
+Matched cards stay face up | 3
 Stop user clicking a third card | 1
-Shuffle cards | 1
+Shuffle cards | 3
 Stop timer when all cards are matched | 1
 Reset cards at the end of the game | 1
 Load jacascript after DOM content is loaded | 1
@@ -111,7 +103,7 @@ Given limited resources, the features that offer the most value at this stage ar
 
 The priority is a working card game, any other features will be added at the end if there is time.
 
-### The Scope Plane
+### The Structure Plane
 
 As the site will not have a lot of content to begin with a linear narrative will work best. The project will consit of two pages, the home page and the game page.
 
