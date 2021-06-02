@@ -190,10 +190,6 @@ body {
 
 /* ---------------------------- HOMEPAGE */
 
-#intro {
-  height: 50vh;
-}
-
 #intro h1 {
   margin: 40px 0 0 0;
   padding: 0;
@@ -242,7 +238,7 @@ body {
   font-size: 2em;
   font-weight: 700;
   text-align: center;
-  margin: 0;
+  margin: 0 0 40px 0;
   color: var(--primary-color);
 }
 
@@ -280,13 +276,18 @@ body {
 /* footer */
 footer {
   text-align: center;
-  margin: 20px 0 80px 0;
+  margin-bottom: 60px;
 }
 
 .play-button {
-  font-size: 3em;
+  font-size: 1.5em;
+  text-decoration: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px 20px;
   font-weight: 700;
   color: var(--primary-color);
+  padding: 8px 15px;
+  cursor: pointer;
 }
 
 
@@ -328,8 +329,6 @@ footer {
   align-items: center;
   backface-visibility: hidden;
   border-radius: 10px;
-  border-width: 2px;
-  border-style: solid;
   transition: transform 500ms ease-in-out;
 }
   
@@ -395,13 +394,13 @@ footer {
   transform: scale(1);
 }
   
-.spider {
+.sign-card-back {
   align-self: flex-start;
-  transform: translateY(-10px);
+  transform: translateY(-3px);
   transition: transform 100ms ease-in-out;
 }
   
-.card-back:hover .spider {
+.card-back:hover .sign-card-back {
   transform: translateY(0)
 }
 
