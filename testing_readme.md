@@ -114,4 +114,6 @@ Lighthouse was used to check the performance of the site. There could be some im
 ![Lighthouse game page report](/assets/readme/lighthouse-game.png)
 
 ## Encountered Issues
-I have no yet been able to correct a bug on the hamburger menu which causes the full screen view to display briefy on page load
+- I have no yet been able to correct a bug on the hamburger menu which causes the full screen view to display briefy on page load
+
+- There is a significant issue on Safari. On the game page backs of cards do not display.
