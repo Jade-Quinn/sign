@@ -69,11 +69,18 @@ Back to main readme [Here](https://github.com/Jade-Quinn/sign/README.md)
 
 ## Code Validation
 
-[W3C Markup Validation](https://validator.w3.org/) was used to check the markup validity of all html on the site.
+[W3C Markup Validation](https://validator.w3.org/) was used to check the markup validity of all html on the site. The game page showed and error as the cards did not have alt attribute. I chose not to include these as it would give players a clue to the content of the cards.
+
+![Homepage](/assets/readme/html-good.png)
+![Gamepage](/assets/readme/html-error.png)
 
 [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) was used to check the markup validity of all css on the site.
 
-[jshint.com](https://jshint.com/) was used to check the markup validity of all javaScript on the site.
+![css](/assets/readme/css-good.png)
+
+[jshint.com](https://jshint.com/) was used to check the markup validity of all javaScript on the site. jshint gave some cross browser warnings which I have not had time to research and correct.
+
+![js](/assets/readme/js-good.png)
 
 
 ## Functionality Testing
@@ -81,7 +88,7 @@ Back to main readme [Here](https://github.com/Jade-Quinn/sign/README.md)
 I tested the features on each page visually and using dev tools on my desktop and mobile.
  - All links are working correctly
  - All features on the game page behave as expected
-    - Cards display 4 across on mobile and 6 across on desktop
+    - Cards display 3 across on mobile and 6 across on desktop
     - Cards are shuffled
     - Pairs are checked for a match
     - Matched pairs stay facing up
@@ -95,6 +102,8 @@ I tested the features on each page visually and using dev tools on my desktop an
 
 ### Browser Testing
 
+The site was tested on Google Chrome, Safari and Firefox. For best performance, use Google Chrome. There is a significant issue on Safari. On the game page backs of cards do not display. I will need to research this issue more to resolve it.
+
 ### Device Testing
 I tested the site on a Macbook Pro and an iPhone 11
 
@@ -102,3 +111,4 @@ I tested the site on a Macbook Pro and an iPhone 11
 Lighthouse was used to check the performance of the site.
 
 ## Encountered Issues
+I have no yet been able to correct a bug on the hamburger menu which causes the full screen view to display briefy on page load
