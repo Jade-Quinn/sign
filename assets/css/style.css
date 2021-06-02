@@ -1,31 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
 
+/* ---------------------------- CORE STYLES */
+
+:root {
+  --primary-color: rgb(226, 74, 36);
+  --secondary-color: rgb(235, 179, 178);
+  --tertiary-color: rgb(185, 231, 198);
+  --fourth-color: rgb(5, 48, 168);
+
+  --menu-speed: 0.75s;
+}
+
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 18px;
-  background-color: #ebb3b2;
-}
-
-
-/* ---------------------------- COLOURS */
-.primary-color {
-  color: #e24a24;
-}
-
-.secondary-color {
-  color: #ebb3b2;
+  background-color: var(--secondary-color);
 }
 
 
 /* ---------------------------- HEADER */
 
-nav {
+.nav-item {
+  display: inline-flex;
+  position: relative;
+  z-index: 2;
   padding: 10px;
-}
-
-nav li {
-  display: flex;
 }
 
 .navbar-brand {
@@ -33,8 +34,154 @@ nav li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 120px;
-  height: 100px;
+  width: 110px;
+  height: 90px;
+}
+
+/* Hamburger starts */
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 6px;
+  background: var(--primary-color); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 6px;
+  background: inherit;
+}
+
+/* Moves Line Down */
+.menu-wrap .hamburger > div::after {
+  top: 10px;
+}
+
+/* Toggler Animation */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Turns Lines Into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate On Hover When Checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* Show Menu */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  background: var(--tertiary-color);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul {
+  padding-left: 0;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: var(--fourth-color);
+  font-size: 4rem;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
 }
 
 
@@ -45,16 +192,14 @@ nav li {
   padding: 0;
   font-weight: 700;
   text-transform: uppercase;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  color: var(--primary-color);
+  text-align: center;
 }
 
 #intro h1 span {
   font-size: 7em;
   display: inline-block;
-  animation: bounce .5s 2;
+  animation: bounce .5s 3;
 
 }
 
@@ -90,27 +235,19 @@ nav li {
 #intro h2 {
   font-size: 2em;
   font-weight: 700;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%);
+  text-align: center;
+  margin: 0;
+  color: var(--primary-color);
 }
 
-/* footer {
-    font-size: 10rem;
-    font-weight: 900;
-    margin: 0;
-    text-transform: uppercase;
-    color: #ed6e45;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+/* how to play section */
 
-footer a {
-  text-decoration: none;
-} */
+.wave-container {
+  background: var(--secondary-color);;
+}
+.wave-container > svg {
+  display: block;
+}
 
 
 

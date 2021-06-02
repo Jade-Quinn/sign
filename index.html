@@ -7,24 +7,31 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Learn Sign Language</title>
 </head>
-<body class="secondary-color">
+<body>
   <!-- header -->
+
   <header>
-    <nav>
-      <li class="nav-item">
-        <a class="navbar-brand" href="index.html"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="home.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="play.html">Play</a>
-      </li>
+    <li class="nav-item">
+      <a class="navbar-brand" href="index.html"></a>
+    </li>
+    <nav class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="play.html">Play</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
 
   <!-- intro -->
-  <section id="intro" class="primary-color">
+  <section id="intro">
     <h1>
       <span>H</span>
       <span>e</span>
@@ -33,12 +40,13 @@
       <span>o</span>
     </h1>
     <h2>Lets learn how to sign</h2>
-    <p>Scroll</p>
   </section>
   
 
   <!-- how to play -->
-  <section>
+
+  <section class="wave-container">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f7df57" fill-opacity="1" d="M0,128L48,112C96,96,192,64,288,80C384,96,480,160,576,165.3C672,171,768,117,864,112C960,107,1056,149,1152,154.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     <h3>How to play</h3>
     <p>Bla Bla bal</p>
   </section>
