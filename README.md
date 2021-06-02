@@ -1,4 +1,4 @@
-![Lulu Loves Logo](/assets/images/logo-blue.png)
+![Sign it](/assets/images/logo-blue.png)
 
 # Sign it
 
@@ -9,12 +9,11 @@
 ## Table of Contents:
 
 - [The Strategy Plane](#the-strategy-plane)
-- [The Scope Plane](#the-scope-plane))
+- [The Scope Plane](#the-scope-plane)
 - [The Structure Plane](#the-structure-plane)
-- [The Skeleton Plane](#the-skeleton-plane))
+- [The Skeleton Plane](#the-skeleton-plane)
 - [The Surface Plane](#the-surface-plane)
-- [Features](#features)
-- [Technology Used](#technology-used)
+- [Technologies Used](#technologies-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -109,7 +108,7 @@ As the site will not have a lot of content to begin with a linear narrative will
 
 ### The Skeleton Plane
 
-The wireframes were created using Balsamiq. They can be viewed at the following links
+The wireframes were created using Balsamiq.
 
 ![Wireframes](/assets/readme/wireframes.jpg)
 
@@ -125,13 +124,13 @@ The wireframes were created using Balsamiq. They can be viewed at the following 
 
 The colour scheme is bright and bold, with a choice of strong contrasting colours to appeal visually to users
 
-- primary-color: rgb(226, 74, 36);
-- secondary-color: rgb(235, 179, 178);
-- tertiary-color: rgb(185, 231, 198);
-- fourth-color: rgb(5, 48, 168);
-- fifth-color: rgb(79, 56, 82);
-- sixth-color: rgb(247, 223, 87);
-- seventh-color: rgb(170, 210, 239);
+- Primary: rgb(226, 74, 36);
+- Secondary: rgb(235, 179, 178);
+- Tertiary: rgb(185, 231, 198);
+- Fourth: rgb(5, 48, 168);
+- Fifth: rgb(79, 56, 82);
+- Sixth: rgb(247, 223, 87);
+- Seventh: rgb(170, 210, 239);
 
 ##### 3. Logo
 
@@ -161,7 +160,7 @@ The logo incorporates the font Space Grotesk aswel as the colour palette which h
     - Balsamiq was used to create the wireframes at the 'Skelton Plane phase.
 
 ## Testing
-
+Link to testing readme can be found [Here](https://github.com/Jade-Quinn/sign/testing_readme.md)
 
 ## Deployment
 
