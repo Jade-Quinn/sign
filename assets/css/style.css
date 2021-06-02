@@ -216,7 +216,6 @@ body {
   }
   50%   {
     transform: translateY(-40px);
-    /* color: #f7df57; */
   }
   100%   {
     transform: translateY(0);
@@ -248,6 +247,12 @@ body {
 }
 
 /* how to play section */
+#how-to-play p{
+  width: 65vw;
+  margin: auto;
+  padding-top: 20px
+}
+
 .wave-container-1 {
   background: var(--sixth-color);
 }
@@ -275,7 +280,7 @@ body {
 /* footer */
 footer {
   text-align: center;
-  margin-bottom: 80px;
+  margin: 20px 0 80px 0;
 }
 
 .play-button {
@@ -401,6 +406,10 @@ footer {
 }
 
 @media (max-width: 800px) {
+  #intro h1 span {
+    font-size: 3em;
+  }
+
   .game-container {
     grid-template-columns: repeat(4, auto);
   }
