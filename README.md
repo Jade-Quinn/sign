@@ -111,9 +111,7 @@ As the site will not have a lot of content to begin with a linear narrative will
 
 The wireframes were created using Balsamiq. They can be viewed at the following links
 
-Mobile
-Tablet
-Desktop
+![Wireframes](/assets/readme/wireframes.jpg)
 
 ### The Surface Plane
 
