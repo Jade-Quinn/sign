@@ -7,6 +7,8 @@
   --secondary-color: rgb(235, 179, 178);
   --tertiary-color: rgb(185, 231, 198);
   --fourth-color: rgb(5, 48, 168);
+  --fifth-color: rgb(79, 56, 82);
+  --sixth-color: rgb(247, 223, 87);
 
   --menu-speed: 0.75s;
 }
@@ -246,11 +248,40 @@ body {
 
 /* how to play section */
 
-.wave-container {
-  background: var(--secondary-color);;
+.wave-container-1 {
+  background: var(--sixth-color);
 }
-.wave-container > svg {
+
+.wave-container-2 {
+  background: var(--secondary-color);
+}
+
+.wave-container-1 > svg, .wave-container-2 > svg {
   display: block;
+}
+
+.wave-container-1 h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.wave-container-1 h3, p {
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  color: var(--fifth-color);
+}
+
+/* footer */
+footer {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.play-button {
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--primary-color);
 }
 
 
