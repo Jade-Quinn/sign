@@ -55,8 +55,24 @@ Share score with friends | 1 | 0
 - As a first time player, I want to be able to navigate through the site easily.
 - As a first time player, I want to read how to play the game.
 - As a player, I want to compete against a timer.
-- As a player I want to know my score i.e how many flips .
+- As a player I want to know my score i.e how many flips.
 - As a returning player I want to learn / familiarise myself with the sign language alphabet.
+
+- As a site owner, I want to notify user when the timer will start.
+- As a site owner, I want overlays to be hidden during game play.
+- As a site owner, I want cards to shuffle randomly.
+- As a site owner, I want selected cards to flip.
+- As a site owner, I want players selected cards to be compared.
+- As a site owner, I want unmatched cards to turn back face down.
+- As a site owner, I want matched cards to stay face up.
+- As a site owner, I want the player to be notified of a match with a sound. 
+- As a site owner, I do not want already matched cards to be clickable.
+- As a site owner, I want the game to end if the time runs out.
+- As a site owner, I want the player to get a success message if the win.
+- As a site owner, I want the player to be notified of a win with a sound. 
+
+- As a site owner, I want the game to reset when the player replays
+
 
 ### The Scope Plane
 
