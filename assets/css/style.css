@@ -9,6 +9,7 @@
   --fourth-color: rgb(5, 48, 168);
   --fifth-color: rgb(79, 56, 82);
   --sixth-color: rgb(247, 223, 87);
+  --seventh-color: rgb(170, 210, 239);
 
   --menu-speed: 0.75s;
 }
@@ -322,7 +323,7 @@ footer {
   align-items: center;
   backface-visibility: hidden;
   border-radius: 10px;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   transition: transform 500ms ease-in-out;
 }
@@ -365,7 +366,7 @@ footer {
   }
   to {
     background-color: rgba(235, 180, 179, .9);
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 
@@ -375,8 +376,8 @@ footer {
 }
   
 .card-front {
-  background-color: var(--tertiary-color);
-  border-color: var(--primary-color);
+  background-color: var(--seventh-color);
+  border-color: var(--fifth-color);
   transform: rotateY(180deg);
 }
   
