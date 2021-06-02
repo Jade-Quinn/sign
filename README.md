@@ -1,6 +1,31 @@
+![Lulu Loves Logo](/assets/images/logo-blue.png)
+
 # Sign it
 
+[View the live project here](https://jade-quinn.github.io/sign/)
+
 'Sign it' is a simple single-player pattern-matching memory game. The game uses imagery of the sign language alphabet to encourage learning through play.
+
+## Table of Contents:
+
+- [The Strategy Plane](#the-strategy-plane)
+- [Functionality of Project](#The Strategy Plane)
+- [User Experience](#user-experience)
+  - [User Stories](#user-stories)
+  - [Design](#design)
+    - [1. Font](#1-font)
+    - [2. Color Scheme](#2-color-scheme)
+    - [3. Logo](#3-logo)
+    - [4. Wireframing & Proposed/Implemented Functionality per Page](#4-wireframing--proposedimplemented-functionality-per-page)
+- [Technology Used](#technology-used)
+- [Database](#database)
+- [Features](#features)
+  - [Future Features](#future-features)
+- [Testing](#testing)
+  - [Found Bugs & Fixes](#found-bugs--fixes)
+- [Deployment](#deployment)
+- [Credits](#credits)
+  - [Special Thanks & Acknowledgements](#special-thanks--acknowledgements)
 
 ## UX
 
@@ -49,6 +74,43 @@ Share score with friends | 1 | 0
 To establish the feature scope for this project I am using the agile methodology, I have made a list of all possible features and given each one a difficulty rating between 1 and 3.
 Each release will allow for a maximum of 12 points. The table below will be used to determine which features to prioritise and which to schedule for a later release.
 
+Feature | Rating
+------------ | -------------
+Logo that links to the home page so users can orientate themselves easily | 1
+Clear, consistent hamburger navigation on each page | 1
+Explain how to play the game | 1
+Responsive design | 1
+Countdown timer | 1
+Flip counter | 1
+Audio queues | 1
+Hide and display text overlays when required | 1
+Card that is being compared stays face up | 1
+Cards which are not a match turn back over | 1
+Matched cards stay face up | 1
+Stop user clicking a third card | 1
+Shuffle cards | 1
+Stop timer when all cards are matched | 1
+Reset cards at the end of the game | 1
+Load jacascript after DOM content is loaded | 1
+
+Given limited resources, the features that offer the most value at this stage are:
+
+- Clear, consistent hamburger navigation on each page
+- Explain how to play the game
+- Responsive design
+- Countdown timer
+- Hide and display text overlays when required
+- Card that is being compared stays face up
+- Cards which are not a match turn back over
+- Matched cards stay face up
+- Stop user clicking a third card
+- Shuffle cards
+- Stop timer when all cards are matched
+- Reset cards at the end of the game
+- Load jacascript after DOM content is loaded
+
+The priority is a working card game, any other features will be added at the end if there is time.
+
 ### The Scope Plane
 
 As the site will not have a lot of content to begin with a linear narrative will work best. The project will consit of two pages, the home page and the game page.
@@ -68,7 +130,6 @@ Desktop
  Space Grotesk is a proportional sans-serif typeface allowing for increased human readability and enhanced eye-tracking on screens. A backup of `sans-serif`, is included in case of any particular font not rendering as expected. Lower cases is used on the description to enhance readability. The tone of the font is bold and fun to compliment the design choices through out the game. An animation has been added to the 'hello' message on the home page to communiate the tone further.
 
 - Space Grotesk - <a href="https://fonts.google.com/specimen/Space+Grotesk"></a>
-
 
 ##### 2. Color Scheme
 
@@ -94,7 +155,6 @@ The logo incorporates the font Space Grotesk aswel as the colour palette which h
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-
 ### Frameworks, Libraries & Programs Used
 
 1. [Google Fonts:](https://fonts.google.com/)
@@ -110,12 +170,7 @@ The logo incorporates the font Space Grotesk aswel as the colour palette which h
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the wireframes at the 'Skelton Plane phase.
 
-
 ## Testing
-
-- The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors.
-- I used lighthouse in chrome developer tools to test perfromance and accessability. Screen shots of testing can be found in the testing folder within documentation
-
 
 
 ## Deployment
