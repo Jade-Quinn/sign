@@ -102,13 +102,16 @@ I tested the features on each page visually and using dev tools on my desktop an
 
 ### Browser Testing
 
-The site was tested on Google Chrome, Safari and Firefox. For best performance, use Google Chrome. There is a significant issue on Safari. On the game page backs of cards do not display. I will need to research this issue more to resolve it.
+The site was tested on Google Chrome, Safari and Firefox. For best performance, use Google Chrome. There is a significant issue on Safari. On the game page backs of cards do not display. I will need to research this issue more to resolve it. This issue is also on Safari on iPhone.
 
 ### Device Testing
 I tested the site on a Macbook Pro and an iPhone 11
 
 ## Performance Testing
-Lighthouse was used to check the performance of the site.
+Lighthouse was used to check the performance of the site. There could be some improvement made on the accessabilty score on both pages. I will increase the contrast of the text and backgrounds on these pages and continue to work on this.
+
+![Lighthouse homepage report](/assets/readme/lighthouse-home.png)
+![Lighthouse game page report](/assets/readme/lighthouse-game.png)
 
 ## Encountered Issues
 I have no yet been able to correct a bug on the hamburger menu which causes the full screen view to display briefy on page load

@@ -134,19 +134,19 @@ The wireframes were created using Balsamiq.
 
  Space Grotesk is a proportional sans-serif typeface allowing for increased human readability and enhanced eye-tracking on screens. A backup of `sans-serif`, is included in case of any particular font not rendering as expected. Lower cases is used on the description to enhance readability. The tone of the font is bold and fun to compliment the design choices through out the game. An animation has been added to the 'hello' message on the home page to communiate the tone further.
 
-- Space Grotesk - <a href="https://fonts.google.com/specimen/Space+Grotesk"></a>
+[Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
 
 ##### 2. Color Scheme
 
 The colour scheme is bright and bold, with a choice of strong contrasting colours to appeal visually to users
 
-- Primary: rgb(226, 74, 36);
-- Secondary: rgb(235, 179, 178);
-- Tertiary: rgb(185, 231, 198);
-- Fourth: rgb(5, 48, 168);
-- Fifth: rgb(79, 56, 82);
-- Sixth: rgb(247, 223, 87);
-- Seventh: rgb(170, 210, 239);
+- Primary: rgb(226, 74, 36)
+- Secondary: rgb(235, 179, 178)
+- Tertiary: rgb(185, 231, 198)
+- Fourth: rgb(5, 48, 168)
+- Fifth: rgb(79, 56, 82)
+- Sixth: rgb(247, 223, 87)
+- Seventh: rgb(170, 210, 239)
 
 ##### 3. Logo
 
