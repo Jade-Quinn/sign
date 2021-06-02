@@ -176,7 +176,7 @@ The logo incorporates the font Space Grotesk aswel as the colour palette which h
     - Balsamiq was used to create the wireframes at the 'Skelton Plane phase.
 
 ## Testing
-Link to testing readme can be found [Here](https://github.com/Jade-Quinn/sign/testing_readme.md)
+Link to testing readme can be found [Here](https://github.com/Jade-Quinn/sign/blob/master/testing_readme.md)
 
 ## Deployment
 
